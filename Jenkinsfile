@@ -25,6 +25,12 @@ pipeline {
          }
       }
 
+      stage('Test') {
+         steps {
+            sh '''echo run test'''
+         }
+      }
+
       stage('Build Docker Image') {
          steps {
            sh 'docker image build -t ${REPOSITORY_TAG} .'
