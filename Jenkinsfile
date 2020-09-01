@@ -27,7 +27,7 @@ pipeline {
 
       stage('Test') {
          steps {
-            sh '''echo run test1'''
+            sh '''echo run test'''
             sh '''echo run test2'''
          }
       }
